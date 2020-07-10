@@ -39,8 +39,10 @@ or if it is paid:
 2. Clone this repository
 
 3. Install Python
+
 ```
 sudo apt-get update # Update your local packages
+
 ```
 And
 ```
@@ -86,8 +88,8 @@ Also you can set the amount to be paid in smileycoins there
 7. Test your Flask app by typing:
 ```
 curl 'http://localhost:5000/getpaymentlink'
-
 ```
+
 and you should get something like
 
 ```json
@@ -99,6 +101,8 @@ and you should get something like
 }
 ```
 ## Deploy to production using Gunicorn and Nginx
+
+First off make sure you have DEBUG=False in the config file
 
 1. Install nginx
 ```

@@ -37,7 +37,6 @@ class ResponseService:
             resp = {
             "amount": 0,
             "confirmations": 0,
-            "unconfirmed": "no",
             "paid": "no"
             }
         elif len(output) >=1:

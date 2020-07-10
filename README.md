@@ -3,7 +3,7 @@ This is a smileycoin payment server that sends out payment links to the HTML5 wa
 
 # About
 this is a simple Flask server that uses two api calls
-either /getpaymentlink, which returns:
+either `/getpaymentlink`, which returns:
 ```json
 {
   "address": "B9wFPjkMknQ3aoVdbJjhhXeXoFBjUCdnAJ",
@@ -14,7 +14,7 @@ either /getpaymentlink, which returns:
 ```
 amount refers to amount to be paid in smileycoin.
 
-and /verifypayment/<address> returns:
+and `/verifypayment/<address>` returns:
 
 ```json
 {
@@ -22,6 +22,14 @@ and /verifypayment/<address> returns:
   "confirmations": 0,
   "paid": "no",
   "unconfirmed": "no"
+}
+```
+or if it is paid:
+```json
+{
+  "amount": 20.0,
+  "confirmations": 0,
+  "paid": "yes"
 }
 ```
 
